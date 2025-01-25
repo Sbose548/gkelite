@@ -1,12 +1,12 @@
 /**
- * Template Name: Company
- * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
- * Updated: Aug 07 2024 with Bootstrap v5.3.3
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
+* Template Name: Company
+* Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
-document.addEventListener('DOMContentLoaded', () => {
+(function() {
   "use strict";
 
   /**
@@ -15,10 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
-    if (!selectHeader) {
-      console.warn('#header element not found');
-      return;
-    }
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
     window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
@@ -31,52 +27,36 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
-  if (mobileNavToggleBtn) {
-    mobileNavToggleBtn.addEventListener('click', () => {
-      document.querySelector('body').classList.toggle('mobile-nav-active');
-      mobileNavToggleBtn.classList.toggle('bi-list');
-      mobileNavToggleBtn.classList.toggle('bi-x');
-    });
-  } else {
-    console.warn('.mobile-nav-toggle element not found');
+  function mobileNavToogle() {
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    mobileNavToggleBtn.classList.toggle('bi-list');
+    mobileNavToggleBtn.classList.toggle('bi-x');
   }
+  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
   /**
    * Hide mobile nav on same-page/hash links
    */
-  const navMenuLinks = document.querySelectorAll('#navmenu a');
-  if (navMenuLinks.length > 0) {
-    navMenuLinks.forEach(navmenu => {
-      navmenu.addEventListener('click', () => {
-        if (document.querySelector('.mobile-nav-active')) {
-          document.querySelector('body').classList.remove('mobile-nav-active');
-          if (mobileNavToggleBtn) {
-            mobileNavToggleBtn.classList.remove('bi-x');
-            mobileNavToggleBtn.classList.add('bi-list');
-          }
-        }
-      });
+  document.querySelectorAll('#navmenu a').forEach(navmenu => {
+    navmenu.addEventListener('click', () => {
+      if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle();
+      }
     });
-  } else {
-    console.warn('No #navmenu a links found');
-  }
+
+  });
 
   /**
    * Toggle mobile nav dropdowns
    */
-  const dropdownToggles = document.querySelectorAll('.navmenu .toggle-dropdown');
-  if (dropdownToggles.length > 0) {
-    dropdownToggles.forEach(navmenu => {
-      navmenu.addEventListener('click', function(e) {
-        e.preventDefault();
-        this.parentNode.classList.toggle('active');
-        this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-        e.stopImmediatePropagation();
-      });
+  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+    navmenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentNode.classList.toggle('active');
+      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      e.stopImmediatePropagation();
     });
-  } else {
-    console.warn('No .toggle-dropdown elements found');
-  }
+  });
 
   /**
    * Preloader
@@ -86,148 +66,159 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', () => {
       preloader.remove();
     });
-  } else {
-    console.warn('#preloader element not found');
   }
 
   /**
    * Scroll top button
    */
-  const scrollTop = document.querySelector('.scroll-top');
-  if (scrollTop) {
-    scrollTop.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
+  let scrollTop = document.querySelector('.scroll-top');
 
-    function toggleScrollTop() {
+  function toggleScrollTop() {
+    if (scrollTop) {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
-
-    window.addEventListener('load', toggleScrollTop);
-    document.addEventListener('scroll', toggleScrollTop);
-  } else {
-    console.warn('.scroll-top element not found');
   }
+  // scrollTop.addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   });
+  // });
+
+  window.addEventListener('load', toggleScrollTop);
+  document.addEventListener('scroll', toggleScrollTop);
 
   /**
    * Animation on scroll function and init
    */
   function aosInit() {
-    if (typeof AOS !== 'undefined') {
-      AOS.init({
-        duration: 600,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      });
-    } else {
-      console.warn('AOS library not found');
-    }
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
   }
   window.addEventListener('load', aosInit);
 
   /**
    * Auto generate the carousel indicators
    */
-  const carouselIndicators = document.querySelectorAll('.carousel-indicators');
-  if (carouselIndicators.length > 0) {
-    carouselIndicators.forEach((carouselIndicator) => {
-      const carousel = carouselIndicator.closest('.carousel');
-      if (carousel) {
-        const carouselItems = carousel.querySelectorAll('.carousel-item');
-        carouselItems.forEach((carouselItem, index) => {
-          carouselIndicator.innerHTML += `<li data-bs-target="#${carousel.id}" data-bs-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></li>`;
-        });
-      }
-    });
-  } else {
-    console.warn('No .carousel-indicators elements found');
-  }
+  // document.querySelectorAll('.carousel-indicators').forEach((carouselIndicator) => {
+  //   carouselIndicator.closest('.carousel').querySelectorAll('.carousel-item').forEach((carouselItem, index) => {
+  //     if (index === 0) {
+  //       carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}" class="active"></li>`;
+  //     } else {
+  //       carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}"></li>`;
+  //     }
+  //   });
+  // });
 
   /**
    * Initiate glightbox
    */
-  if (typeof GLightbox !== 'undefined') {
-    GLightbox({
-      selector: '.glightbox'
-    });
-  } else {
-    console.warn('GLightbox library not found');
-  }
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
   /**
    * Init isotope layout and filters
    */
-  const isotopeLayouts = document.querySelectorAll('.isotope-layout');
-  if (isotopeLayouts.length > 0) {
-    isotopeLayouts.forEach(function(isotopeItem) {
-      const container = isotopeItem.querySelector('.isotope-container');
-      if (!container) {
-        console.warn('No .isotope-container found inside .isotope-layout');
-        return;
-      }
+  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+    let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
+    let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+    let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
-      imagesLoaded(container, function() {
-        const initIsotope = new Isotope(container, {
-          itemSelector: '.isotope-item',
-          layoutMode: isotopeItem.getAttribute('data-layout') ?? 'masonry',
-          filter: isotopeItem.getAttribute('data-default-filter') ?? '*',
-          sortBy: isotopeItem.getAttribute('data-sort') ?? 'original-order'
-        });
-
-        isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-          filters.addEventListener('click', function() {
-            const activeFilter = isotopeItem.querySelector('.isotope-filters .filter-active');
-            if (activeFilter) activeFilter.classList.remove('filter-active');
-            this.classList.add('filter-active');
-            initIsotope.arrange({
-              filter: this.getAttribute('data-filter')
-            });
-          });
-        });
+    let initIsotope;
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+        itemSelector: '.isotope-item',
+        layoutMode: layout,
+        filter: filter,
+        sortBy: sort
       });
     });
-  }
+
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
+      filters.addEventListener('click', function() {
+        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
+        this.classList.add('filter-active');
+        initIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        if (typeof aosInit === 'function') {
+          aosInit();
+        }
+      }, false);
+    });
+
+  });
 
   /**
    * Animate the skills items on reveal
    */
-  const skillsAnimation = document.querySelectorAll('.skills-animation');
-  if (skillsAnimation.length > 0) {
-    skillsAnimation.forEach((item) => {
-      new Waypoint({
-        element: item,
-        offset: '80%',
-        handler: function() {
-          const progress = item.querySelectorAll('.progress .progress-bar');
-          progress.forEach(el => {
-            el.style.width = el.getAttribute('aria-valuenow') + '%';
-          });
-        }
-      });
+  let skillsAnimation = document.querySelectorAll('.skills-animation');
+  skillsAnimation.forEach((item) => {
+    new Waypoint({
+      element: item,
+      offset: '80%',
+      handler: function(direction) {
+        let progress = item.querySelectorAll('.progress .progress-bar');
+        progress.forEach(el => {
+          el.style.width = el.getAttribute('aria-valuenow') + '%';
+        });
+      }
     });
-  }
+  });
 
   /**
    * Init swiper sliders
    */
   function initSwiper() {
-    if (typeof Swiper !== 'undefined') {
-      document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-        const configElement = swiperElement.querySelector(".swiper-config");
-        if (configElement) {
-          const config = JSON.parse(configElement.innerHTML.trim());
-          new Swiper(swiperElement, config);
-        }
-      });
-    } else {
-      console.warn('Swiper library not found');
-    }
+    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+      let config = JSON.parse(
+        swiperElement.querySelector(".swiper-config").innerHTML.trim()
+      );
+
+      if (swiperElement.classList.contains("swiper-tab")) {
+        initSwiperWithCustomPagination(swiperElement, config);
+      } else {
+        new Swiper(swiperElement, config);
+      }
+    });
   }
+
   window.addEventListener("load", initSwiper);
 
+})();
+
+// ====================== carouselItem =============
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.getElementById("hero-carousel");
+  const items = carousel.querySelectorAll(".carousel-item");
+  const prevButton = carousel.querySelector(".carousel-control-prev");
+  const nextButton = carousel.querySelector(".carousel-control-next");
+
+  let currentIndex = 0; // Keep track of the current active item
+
+  const updateActiveItem = (newIndex) => {
+    // Remove 'active' from the current item
+    items[currentIndex].classList.remove("active");
+    // Add 'active' to the new item
+    currentIndex = newIndex;
+    items[currentIndex].classList.add("active");
+  };
+
+  // Handle the 'Next' button click
+  nextButton.addEventListener("click", () => {
+    const newIndex = (currentIndex + 1) % items.length; // Circular increment
+    updateActiveItem(newIndex);
+  });
+
+  // Handle the 'Previous' button click
+  prevButton.addEventListener("click", () => {
+    const newIndex = (currentIndex - 1 + items.length) % items.length; // Circular decrement
+    updateActiveItem(newIndex);
+  });
 });

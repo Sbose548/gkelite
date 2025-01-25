@@ -1,10 +1,10 @@
 'use client'
 
-import Image from "next/image";
-import styles from "./page.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Link from "next/link";
+import HeroCarousel from "./components/Hero";
 
 export default function Home() {
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="container-fluid p-0">
       <main className="main">
-        <section id="hero" className="hero section dark-background">
+        {/* <section id="hero" className="hero section dark-background">
 
           <div id="hero-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -25,7 +25,7 @@ export default function Home() {
               <div className="container">
                 <h2>Talent Acquisition Excellence</h2>
                 <p>At GKelite-Info Service, we are dedicated to securing top-tier talent that fuels innovation and business growth. As one of the fastest-growing talent acquisition platforms, we are the preferred recruiting partner for numerous Fortune 500 companies.</p>
-                <a href="about.html" className="btn-get-started">Read More</a>
+                <Link href="about.html" className="btn-get-started">Read More</Link>
               </div>
             </div>
 
@@ -34,7 +34,7 @@ export default function Home() {
               <div className="container">
                 <h2>Dynamic Digital Marketing Solutions</h2>
                 <p>GKelite-Info Digital amplifies your brand’s visibility and elevates your online presence to new heights with cutting-edge, results-driven digital marketing strategies!</p>
-                <a href="about.html" className="btn-get-started">Read More</a>
+                <Link href="about.html" className="btn-get-started">Read More</Link>
               </div>
             </div>
 
@@ -43,23 +43,24 @@ export default function Home() {
               <div className="container">
                 <h2>B2B & B2C Sales Mastery</h2>
                 <p> Mastering B2B and B2C sales is crucial in today’s competitive marketplace. GKelite-Info specializes in providing unparalleled sales services that enhance your sales strategy and deliver measurable results in both business-to-business and business-to-consumer sectors.</p>
-                <a href="about.html" className="btn-get-started">Read More</a>
+                <Link href="about.html" className="btn-get-started">Read More</Link>
               </div>
             </div>
 
-            <a className="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <Link className="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
               <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-            </a>
+            </Link>
 
-            <a className="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <Link className="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
               <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-            </a>
+            </Link>
 
             <ol className="carousel-indicators"></ol>
 
           </div>
 
-        </section>
+        </section> */}
+        <HeroCarousel/>
 
         <section id="about" className="about section">
 
@@ -88,12 +89,10 @@ export default function Home() {
           </div>
 
         </section>
+
         <section id="services" className="services section light-background">
-
           <div className="container">
-
-            <div className="row gy-4">
-
+            <div className="row gy-4 justify-content-center">
               <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div className="service-item item-cyan position-relative">
                   <div className="icon">
@@ -102,9 +101,9 @@ export default function Home() {
                     </svg>
                     <i className="bi bi-activity"></i>
                   </div>
-                  <a href="service-details.html" className="stretched-link">
+                  <Link href="/service-details/talent_acquisition_excellence" className="stretched-link">
                     <h3>Talent Acquisition Excellence</h3>
-                  </a>
+                  </Link>
                   <p>At GKelite-Info Service, we are dedicated to securing top-tier talent that fuels innovation and business growth and ensuring the best fit.</p>
                 </div>
               </div>
@@ -117,9 +116,9 @@ export default function Home() {
                     </svg>
                     <i className="bi bi-broadcast"></i>
                   </div>
-                  <a href="service-details.html" className="stretched-link">
+                  <Link href="/service-details/dynamic_Digital_marketing_solutions" className="stretched-link">
                     <h3>Dynamic Digital Marketing Solutions</h3>
-                  </a>
+                  </Link>
                   <p>Digital amplify your brand’s visibility and catapult your online presence to new heights with our results-driven digital marketing strategies!</p>
                 </div>
               </div>
@@ -132,60 +131,42 @@ export default function Home() {
                     </svg>
                     <i className="bi bi-easel"></i>
                   </div>
-                  <a href="service-details.html" className="stretched-link">
+                  <Link href="/service-details/b2b_b2c_sales_mastery" className="stretched-link">
                     <h3> B2B & B2C Sales Mastery</h3>
-                  </a>
+                  </Link>
                   <p>Sales Service elevate your sales game, delivering unparalleled results for both business-to-business and business-to-consumer markets.</p>
                 </div>
               </div>
-            </div>
-            <section id="clients" className="clients section">
-              <div className="container section-title" data-aos="fade-up">
-                <h2>Clients</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-              </div>
-
-              <div className="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div className="row g-0 clients-wrap">
-
-                  <div className="col-xl-3 col-md-4 client-logo">
-                    <img src="assets/img/clients/client-1.png" className="img-fluid" alt="" />
+              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div className="service-item item-indigo position-relative">
+                  <div className="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" strokeWidth="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                    </svg>
+                    <i className="bi bi-easel"></i>
                   </div>
-
-                  <div className="col-xl-3 col-md-4 client-logo">
-                    <img src="assets/img/clients/client-2.png" className="img-fluid" alt="" />
-                  </div>
-
-                  <div className="col-xl-3 col-md-4 client-logo">
-                    <img src="assets/img/clients/client-3.png" className="img-fluid" alt="" />
-                  </div>
-
-                  <div className="col-xl-3 col-md-4 client-logo">
-                    <img src="assets/img/clients/client-4.png" className="img-fluid" alt="" />
-                  </div>
-
-                  <div className="col-xl-3 col-md-4 client-logo">
-                    <img src="assets/img/clients/client-5.png" className="img-fluid" alt="" />
-                  </div>
-
-                  <div className="col-xl-3 col-md-4 client-logo">
-                    <img src="assets/img/clients/client-6.png" className="img-fluid" alt="" />
-                  </div>
-
-                  <div className="col-xl-3 col-md-4 client-logo">
-                    <img src="assets/img/clients/client-7.png" className="img-fluid" alt="" />
-                  </div>
-
-                  <div className="col-xl-3 col-md-4 client-logo">
-                    <img src="assets/img/clients/client-8.png" className="img-fluid" alt="" />
-                  </div>
-
+                  <Link href="/service-details/bpo_services" className="stretched-link">
+                    <h3>BPO Services</h3>
+                  </Link>
+                  <p> Our BPO services are designed to deliver exceptional support for your business processes, allowing you to focus on your core operations.</p>
                 </div>
-
               </div>
-
-            </section>
+              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div className="service-item item-red position-relative">
+                  <div className="icon">
+                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" strokeWidth="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                    </svg>
+                    <i className="bi bi-easel"></i>
+                  </div>
+                  <Link href="/service-details/ai_services" className="stretched-link">
+                    <h3>AI Services</h3>
+                  </Link>
+                  <p> We provide cutting-edge AI services by creating custom Large Language Models (LLMs) tailored to meet unique requirements.</p>
+                </div>
+              </div>
+            </div>
+           
           </div>
         </section>
       </main>

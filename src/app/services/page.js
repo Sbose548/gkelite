@@ -2,6 +2,7 @@
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 import { useEffect } from "react";
 
 import React from 'react'
@@ -14,27 +15,19 @@ const page = () => {
             duration: 1000, // Adjust as needed
         });
     }, []);
-          
+
     return (
         <div>
             <main>
                 <div className="page-title accent-background">
                     <div className="container d-lg-flex justify-content-between align-items-center">
                         <h1 className="mb-2 mb-lg-0">Services</h1>
-                        <nav className="breadcrumbs">
-                            <ol>
-                                <li><a href="index.html">Home</a></li>
-                                <li className="current">Services</li>
-                            </ol>
-                        </nav>
+                       
                     </div>
                 </div>
                 <section id="services" className="services section light-background">
-
                     <div className="container">
-
-                        <div className="row gy-4">
-
+                        <div className="row gy-4 justify-content-center">
                             <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                                 <div className="service-item item-cyan position-relative">
                                     <div className="icon">
@@ -43,14 +36,12 @@ const page = () => {
                                         </svg>
                                         <i className="bi bi-activity"></i>
                                     </div>
-                                    <a href="service-details.html" className="stretched-link">
+                                    <Link href="/service-details/talent_acquisition_excellence" className="stretched-link">
                                         <h3>Talent Acquisition Excellence</h3>
-                                    </a>
-                                    <p>At GKelite-Info Service, we are dedicated to securing top-tier talent that fuels innovation and business growth. As one of the fastest-growing talent acquisition platforms, we are the preferred recruiting partner for numerous Fortune 500 companies.</p>
+                                    </Link>
+                                    <p>At GKelite-Info Service, we are dedicated to securing top-tier talent that fuels innovation and business growth and ensuring the best fit.</p>
                                 </div>
                             </div>
-
-
 
                             <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                                 <div className="service-item item-orange position-relative">
@@ -60,14 +51,12 @@ const page = () => {
                                         </svg>
                                         <i className="bi bi-broadcast"></i>
                                     </div>
-                                    <a href="service-details.html" className="stretched-link">
+                                    <Link href="/service-details/dynamic_Digital_marketing_solutions" className="stretched-link">
                                         <h3>Dynamic Digital Marketing Solutions</h3>
-                                    </a>
-                                    <p>GKelite-Info Digital amplifies your brand’s visibility and elevates your online presence to new heights with cutting-edge, results-driven digital marketing strategies!</p>
+                                    </Link>
+                                    <p>Digital amplify your brand’s visibility and catapult your online presence to new heights with our results-driven digital marketing strategies!</p>
                                 </div>
                             </div>
-
-
 
                             <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                                 <div className="service-item item-teal position-relative">
@@ -77,13 +66,12 @@ const page = () => {
                                         </svg>
                                         <i className="bi bi-easel"></i>
                                     </div>
-                                    <a href="service-details.html" className="stretched-link">
-                                        <h3>B2B & B2C Sales Mastery</h3>
-                                    </a>
-                                    <p> Mastering B2B and B2C sales is crucial in today’s competitive marketplace. GKelite-Info specializes in providing unparalleled sales services that enhance your sales strategy and deliver measurable results in both business-to-business and business-to-consumer sectors.</p>
+                                    <Link href="/service-details/b2b_b2c_sales_mastery" className="stretched-link">
+                                        <h3> B2B & B2C Sales Mastery</h3>
+                                    </Link>
+                                    <p>Sales Service elevate your sales game, delivering unparalleled results for both business-to-business and business-to-consumer markets.</p>
                                 </div>
                             </div>
-
                             <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                                 <div className="service-item item-indigo position-relative">
                                     <div className="icon">
@@ -92,13 +80,12 @@ const page = () => {
                                         </svg>
                                         <i className="bi bi-easel"></i>
                                     </div>
-                                    <a href="service-details.html" className="stretched-link">
+                                    <Link href="/service-details/bpo_services" className="stretched-link">
                                         <h3>BPO Services</h3>
-                                    </a>
+                                    </Link>
                                     <p> Our BPO services are designed to deliver exceptional support for your business processes, allowing you to focus on your core operations.</p>
                                 </div>
                             </div>
-
                             <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                                 <div className="service-item item-red position-relative">
                                     <div className="icon">
@@ -107,19 +94,15 @@ const page = () => {
                                         </svg>
                                         <i className="bi bi-easel"></i>
                                     </div>
-                                    <a href="service-details.html" className="stretched-link">
+                                    <Link href="/service-details/ai_services" className="stretched-link">
                                         <h3>AI Services</h3>
-                                    </a>
+                                    </Link>
                                     <p> We provide cutting-edge AI services by creating custom Large Language Models (LLMs) tailored to meet unique requirements.</p>
                                 </div>
                             </div>
-
-
-
                         </div>
 
                     </div>
-
                 </section>
             </main>
         </div>

@@ -1,12 +1,9 @@
-
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import 'bootstrap-icons/font/bootstrap-icons.css';
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css"; // Include Bootstrap Icons
 import BootstrapClient from "./components/BootstrapClient";
-
-
-
 
 export const metadata = {
   title: "GKELITE-INFO-Contact",
@@ -18,7 +15,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <BootstrapClient />
-
         <Header />
         {children}
         <Footer />

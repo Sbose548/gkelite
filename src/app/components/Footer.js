@@ -9,9 +9,9 @@ const Footer = () => {
                 <div className="container footer-top">
                     <div className="row gy-4">
                         <div className="col-lg-4 col-md-6 footer-about">
-                            <a href="https://maps.app.goo.gl/K7L8txP4VR5cpA3MA" className="logo d-flex align-items-center">
+                            <Link href="https://maps.app.goo.gl/K7L8txP4VR5cpA3MA" className="logo d-flex align-items-center">
                                 <span className="sitename">GKELITE</span>
-                            </a>
+                            </Link>
                             <div className="footer-contact pt-3">
                                 <p>6-3-887 3rd Floor Mcp Arcade</p>
                                 <p> Opp: Domino's, Raj Bhavan Road</p>
@@ -21,10 +21,10 @@ const Footer = () => {
                                 <p><strong>Email:</strong> <span>gkeliteinfo@gmail.com</span></p>
                             </div>
                             <div className="social-links d-flex mt-4">
-                                <a href="#"><i className="bi bi-twitter-x"></i></a>
-                                <a href="#"><i className="bi bi-facebook"></i></a>
-                                <a href="#"><i className="bi bi-instagram"></i></a>
-                                <a href="#"><i className="bi bi-linkedin"></i></a>
+                                <Link href="#"><i className="bi bi-twitter-x"></i></Link>
+                                <Link href="#"><i className="bi bi-facebook"></i></Link>
+                                <Link href="#"><i className="bi bi-instagram"></i></Link>
+                                <Link href="#"><i className="bi bi-linkedin"></i></Link>
                             </div>
                         </div>
 
@@ -34,19 +34,19 @@ const Footer = () => {
                                 <li><Link href="/">Home</Link></li>
                                 <li><Link href="/about">About us</Link></li>
                                 <li><Link href="/services">Services</Link></li>
-                                <li><Link href="#">Terms of service</Link></li>
-                                <li><Link href="#">Privacy policy</Link></li>
+                                <li><Link href="/terms-of-services">Terms of service</Link></li>
+                                {/* <li><Link href="#">Privacy policy</Link></li> */}
                             </ul>
                         </div>
 
                         <div className="col-lg-2 col-md-3 footer-links">
                             <h4>Our Services</h4>
                             <ul>
-                                <li><Link href="/services">IT Development</Link></li>
-                                <li><Link href="/services">Talent Acquisition</Link></li>
-                                <li><Link href="/services">B2B & B2C Sales</Link></li>
-                                <li><Link href="/services">Marketing</Link></li>
-                                <li><Link href="/services">BPO Service</Link></li>
+                                <li><Link href="/service-details/ai_services">IT Development</Link></li>
+                                <li><Link href="/service-details/talent_acquisition_excellence">Talent Acquisition</Link></li>
+                                <li><Link href="/service-details/b2b_b2c_sales_mastery">B2B & B2C Sales</Link></li>
+                                <li><Link href="/service-details/dynamic_Digital_marketing_solutions">Marketing</Link></li>
+                                <li><Link href="/service-details/bpo_services">BPO Service</Link></li>
                             </ul>
                         </div>
 
@@ -69,7 +69,7 @@ const Footer = () => {
                     <div className="container copyright text-center mt-4">
                         <p>© <span>Copyright</span> <strong className="px-1 sitename">GKelite</strong> <span>All Rights Reserved</span></p>
                         <div className="credits">
-                            Designed by <a href="https://bootstrapmade.com/">GKelite-IT</a>
+                            Designed by <Link href="https://bootstrapmade.com/">GKelite-IT</Link>
                         </div>
                     </div>
 
