@@ -134,7 +134,7 @@ const page = () => {
                                     </div>
                                     <div className="member-info">
                                         <h4>Narra Shiva Prasad</h4>
-                                        <span>Chief Executive Officer</span>
+                                        <span>CEO(FOUNDER)</span>
                                     </div>
                                 </div>
                             </div>
