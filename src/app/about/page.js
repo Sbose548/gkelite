@@ -133,7 +133,7 @@ const page = () => {
                                         </div>
                                     </div>
                                     <div className="member-info">
-                                        <h4>Walter White</h4>
+                                        <h4>Narra Shiva Prasad</h4>
                                         <span>Chief Executive Officer</span>
                                     </div>
                                 </div>
