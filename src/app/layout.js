@@ -6,8 +6,8 @@ import "bootstrap-icons/font/bootstrap-icons.css"; // Include Bootstrap Icons
 import BootstrapClient from "./components/BootstrapClient";
 
 export const metadata = {
-  title: "GKELITE-INFO-Contact",
-  description: "GKELITE-INFO-Contact",
+  title: "GKELITE-INFO",
+  description: "GKELITE-INFO",
 };
 
 export default function RootLayout({ children }) {
