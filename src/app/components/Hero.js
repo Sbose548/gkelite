@@ -49,7 +49,7 @@ const HeroCarousel = () => {
         data-bs-ride="false"
         data-bs-interval="5000"
       >
-        <div className="carousel-item active">
+        <div className="carousel-item ">
           <img
             src="/assets/img/hero-carousel/hero-carousel-1.jpg"
             alt="Talent Acquisition Excellence"
@@ -86,7 +86,7 @@ const HeroCarousel = () => {
           </div>
         </div>
 
-       <div className="carousel-item">
+       <div className="carousel-item active">
           <img
             src="/assets/img/hero-carousel/Designer.jpeg"
             alt="AI services"
