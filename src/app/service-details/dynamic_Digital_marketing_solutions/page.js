@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
+export const metadata = {
+  title: "Dynamic Digital marketing solutions | GKELITE",
+  description: "GKELITE-INFO-Contact",
+};
+
 const page = () => {
   return (
     <main className="main">

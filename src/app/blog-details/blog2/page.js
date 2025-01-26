@@ -1,5 +1,10 @@
 import React from 'react'
 
+export const metadata = {
+    title: "Blog 2 | GKELITE",
+    description: "GKELITE-INFO-Contact",
+};
+
 const page = () => {
     return (
         <main className="main">

@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
+export const metadata = {
+  title: "B2B and B2C sales mastery | GKELITE",
+  description: "GKELITE-INFO-Contact",
+};
+
 const page = () => {
   return (
     <main className="main">
