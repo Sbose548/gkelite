@@ -31,7 +31,7 @@ export default function Home() {
             <div className="carousel-item active">
               <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
               <div className="container">
-                <h2>Talent Acquisition Excellence</h2>
+                <h2>Talent Acquisition Exce</h2>
                 <p>At GKelite-Info Service, we are dedicated to securing top-tier talent that fuels innovation and business growth. As one of the fastest-growing talent acquisition platforms, we are the preferred recruiting partner for numerous Fortune 500 companies.</p>
                 <Link href="about.html" className="btn-get-started">Read More</Link>
               </div>
