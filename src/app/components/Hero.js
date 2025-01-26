@@ -89,14 +89,14 @@ const HeroCarousel = () => {
        <div className="carousel-item">
           <img
             src="/assets/img/hero-carousel/hero-carousel-2.jpg"
-            alt="Digital Marketing Solutions"
+            alt="AI services"
           />
           <div className="container">
-            <h2>Dynamic Digital Marketing</h2>
+            <h2>AI Services</h2>
             <p>
-              GKelite-Info Digital amplifies your brand’s visibility and
-              elevates your online presence to new heights with cutting-edge,
-              results-driven digital marketing strategies!
+              GKelite-Info Digital harnesses the power of AI to deliver cutting-edge generative AI models, 
+              offering innovative solutions tailored to your unique challenges.
+              Empower your business with intelligent, results-driven strategies designed to transform your vision into reality!
             </p>
             <Link href="/service-details/dynamic_Digital_marketing_solutions" className="btn-get-started">
               Read More
