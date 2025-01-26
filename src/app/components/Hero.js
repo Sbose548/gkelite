@@ -86,6 +86,25 @@ const HeroCarousel = () => {
           </div>
         </div>
 
+       <div className="carousel-item">
+          <img
+            src="/assets/img/hero-carousel/hero-carousel-2.jpg"
+            alt="Digital Marketing Solutions"
+          />
+          <div className="container">
+            <h2>Dynamic Digital Marketing</h2>
+            <p>
+              GKelite-Info Digital amplifies your brand’s visibility and
+              elevates your online presence to new heights with cutting-edge,
+              results-driven digital marketing strategies!
+            </p>
+            <Link href="/service-details/dynamic_Digital_marketing_solutions" className="btn-get-started">
+              Read More
+            </Link>
+          </div>
+        </div>
+
+
         <div className="carousel-item">
           <img
             src="/assets/img/hero-carousel/hero-carousel-3.jpg"
