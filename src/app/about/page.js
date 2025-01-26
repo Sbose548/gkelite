@@ -2,7 +2,7 @@ import About from "../components/About";
 
 export const metadata = {
     title: "About | GKELITE",
-    description: "GKELITE-INFO-Contact",
+    description: "GKELITE-INFO",
 };
 
 const Page = () => {
