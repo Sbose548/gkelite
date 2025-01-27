@@ -25,7 +25,6 @@ const About = () => {
 
                     </div>
                 </div>
-
                 <section id="about" className="about section">
 
                     <div className="container">
@@ -53,15 +52,14 @@ const About = () => {
                     </div>
 
                 </section>
-                {/* <section id="skills" className="skills section" style={{"textal: left;margin-left:150px;margin-right:100px"}}> */}
-                <section id="skills" className="skills section" style={{ textAlign: 'left', marginLeft: '150px', marginRight: '100px' }}>
+                <section id="skills" className="skills section">
 
                     <div className="container section-title" data-aos="fade-up">
                         <h2>OUR OBJECTIVES</h2>
                         <p>To drive business success through innovative, comprehensive solutions.</p>
                     </div>
 
-                    <div className="our-story" >
+                    <div className="our-story container" >
                         <p>At GKelite, we proudly position ourselves as the ultimate one-stop powerhouse, endorsed by industry leaders, to accelerate business success! Our objectives are clear: </p>
                         <h6 className="fw-bold">Talent Acquisition Excellence – GK Elite- Info Service help you secure the best talent, driving innovation and growth.</h6>
                         <p>Talent Acquisition Excellence – At GKelite-Info Service, we are dedicated to securing top-tier talent that fuels innovation and business growth.</p>
@@ -198,9 +196,6 @@ const About = () => {
                     </div>
 
                 </section>
-
-
-
             </main>
         </div>
     )
