@@ -62,9 +62,6 @@ const HeroCarousel = () => {
               fastest-growing talent acquisition platforms, we are the preferred
               recruiting partner for numerous Fortune 500 companies.
             </p>
-            <Link href="/service-details/talent_acquisition_excellence" className="btn-get-started">
-              Read More
-            </Link>
           </div>
         </div>
 
@@ -80,9 +77,7 @@ const HeroCarousel = () => {
               elevates your online presence to new heights with cutting-edge,
               results-driven digital marketing strategies!
             </p>
-            <Link href="/service-details/dynamic_Digital_marketing_solutions" className="btn-get-started">
-              Read More
-            </Link>
+           
           </div>
         </div>
 
@@ -98,9 +93,7 @@ const HeroCarousel = () => {
               offering innovative solutions tailored to your unique challenges.
               Empower your business with intelligent, results-driven strategies designed to transform your vision into reality!
             </p>
-            <Link href="/service-details/dynamic_Digital_marketing_solutions" className="btn-get-started">
-              Read More
-            </Link>
+            
           </div>
         </div>
 
@@ -119,9 +112,7 @@ const HeroCarousel = () => {
               measurable results in both business-to-business and
               business-to-consumer sectors.
             </p>
-            <Link href="/service-details/b2b_b2c_sales_mastery" className="btn-get-started">
-              Read More
-            </Link>
+           
           </div>
         </div>
 
