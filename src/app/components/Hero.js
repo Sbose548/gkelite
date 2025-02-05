@@ -83,7 +83,7 @@ const HeroCarousel = () => {
 
        <div className="carousel-item active">
           <img
-            src="/assets/img/hero-carousel/ai.png"
+            src="/assets/img/hero-carousel/ai-service-1.png"
             alt="AI services"
           />
           <div className="container">
