@@ -70,7 +70,7 @@ const HeroCarousel = () => {
 
         <div className="carousel-item">
           <img
-            src="/assets/img/hero-carousel/hero-carousel-2.jpg"
+            src="/assets/img/hero-carousel/sms.jpg"
             alt="Digital Marketing Solutions"
           />
           <div className="container">
@@ -88,7 +88,7 @@ const HeroCarousel = () => {
 
        <div className="carousel-item active">
           <img
-            src="/assets/img/hero-carousel/sms.jpg"
+            src="/assets/img/hero-carousel/AI-Services.jpg"
             alt="AI services"
           />
           <div className="container">
