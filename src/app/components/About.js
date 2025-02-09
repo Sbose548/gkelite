@@ -109,30 +109,15 @@ const About = () => {
 
                 </section>
 
-                {/* Team Section */}
+               {/* Team Section */}
                 <section id="team" className="team section light-background">
                     <div className="container section-title" data-aos="fade-up">
                         <h2>Our Team</h2>
                         <p>Experienced Professionals Dedicated To Innovation</p>
                     </div>
 
-{/* Team Member 2 */}
-                            <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                                <div className="team-member">
-                                    <div className="member-img">
-                                        <img src="/assets/img/team/team-2.png" className="img-fluid" alt="Narra Shiva Prasad" />
-                                        <div className="social">
-                                            <Link href="#"><i className="bi bi-linkedin"></i></Link>
-                                        </div>
-                                    </div>
-                                    <div className="member-info">
-                                        <h4>Narra Shiva Prasad</h4>
-                                        <span>CEO (Founder)</span>
-                                    </div>
-                                </div>
-                            </div>
                     {/* Aligning team members towards the right */}
-                    <div className="container">
+                    <div className="container" style={{ display: "flex", justifyContent: "flex-end", marginRight: "50px" }}>
                         <div className="row gy-4">
                             {/* Team Member 1 */}
                             <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
@@ -140,7 +125,7 @@ const About = () => {
                                     <div className="member-img">
                                         <img src="/assets/img/team/team-4.png" className="img-fluid" alt="Lalit Adithya" />
                                         <div className="social">
-                                            <Link href="#"><i className="bi bi-linkedin"></i></Link>
+                                            <Link href=""><i className="bi bi-linkedin"></i></Link>
                                         </div>
                                     </div>
                                     <div className="member-info">
@@ -150,7 +135,21 @@ const About = () => {
                                 </div>
                             </div>
 
-                            
+                            {/* Team Member 2 */}
+                            <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                                <div className="team-member">
+                                    <div className="member-img">
+                                        <img src="/assets/img/team/team-2.png" className="img-fluid" alt="Narra Shiva Prasad" />
+                                        <div className="social">
+                                            <Link href=""><i className="bi bi-linkedin"></i></Link>
+                                        </div>
+                                    </div>
+                                    <div className="member-info">
+                                        <h4>Narra Shiva Prasad</h4>
+                                        <span>CEO (Founder)</span>
+                                    </div>
+                                </div>
+                            </div>
 
                             {/* Team Member 3 */}
                             <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
@@ -158,7 +157,7 @@ const About = () => {
                                     <div className="member-img">
                                         <img src="/assets/img/team/team-1.png" className="img-fluid" alt="Shikar Baduria" />
                                         <div className="social">
-                                            <Link href="#"><i className="bi bi-linkedin"></i></Link>
+                                            <Link href=""><i className="bi bi-linkedin"></i></Link>
                                         </div>
                                     </div>
                                     <div className="member-info">
@@ -167,7 +166,6 @@ const About = () => {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
