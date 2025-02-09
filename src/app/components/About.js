@@ -117,7 +117,7 @@ const About = () => {
                     </div>
 
 {/* Team Member 2 */}
-                            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                            <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                                 <div className="team-member">
                                     <div className="member-img">
                                         <img src="/assets/img/team/team-2.png" className="img-fluid" alt="Narra Shiva Prasad" />
@@ -135,7 +135,7 @@ const About = () => {
                     <div className="container">
                         <div className="row gy-4">
                             {/* Team Member 1 */}
-                            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                            <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                                 <div className="team-member">
                                     <div className="member-img">
                                         <img src="/assets/img/team/team-4.png" className="img-fluid" alt="Lalit Adithya" />
@@ -153,7 +153,7 @@ const About = () => {
                             
 
                             {/* Team Member 3 */}
-                            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                            <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
                                 <div className="team-member">
                                     <div className="member-img">
                                         <img src="/assets/img/team/team-1.png" className="img-fluid" alt="Shikar Baduria" />
