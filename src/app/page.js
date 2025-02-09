@@ -100,18 +100,18 @@ export default function Home() {
         <section id="services" className="services section light-background">
           <div className="container">
             <div className="row gy-4 justify-content-center">
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div className="service-item item-cyan position-relative">
+               <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div className="service-item item-red position-relative">
                   <div className="icon">
                     <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke="none" strokeWidth="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                      <path stroke="none" strokeWidth="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
                     </svg>
-                    <i className="bi bi-activity"></i>
+                    <i className="bi bi-easel"></i>
                   </div>
-                  <Link href="/service-details/talent_acquisition_excellence" className="stretched-link">
-                    <h3>Talent Acquisition Excellence</h3>
+                  <Link href="/service-details/ai_services" className="stretched-link">
+                    <h3>AI Services</h3>
                   </Link>
-                  <p>At GKelite-Info Service, we are dedicated to securing top-tier talent that fuels innovation and business growth and ensuring the best fit.</p>
+                  <p> We provide cutting-edge AI services by creating custom Large Language Models (LLMs) tailored to meet unique requirements.</p>
                 </div>
               </div>
 
@@ -130,7 +130,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div className="service-item item-teal position-relative">
                   <div className="icon">
                     <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +144,8 @@ export default function Home() {
                   <p>Sales Service elevate your sales game, delivering unparalleled results for both business-to-business and business-to-consumer markets.</p>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+
+                <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div className="service-item item-indigo position-relative">
                   <div className="icon">
                     <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -158,20 +159,21 @@ export default function Home() {
                   <p> Our BPO services are designed to deliver exceptional support for your business processes, allowing you to focus on your core operations.</p>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="service-item item-red position-relative">
+               <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div className="service-item item-cyan position-relative">
                   <div className="icon">
                     <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke="none" strokeWidth="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                      <path stroke="none" strokeWidth="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
                     </svg>
-                    <i className="bi bi-easel"></i>
+                    <i className="bi bi-activity"></i>
                   </div>
-                  <Link href="/service-details/ai_services" className="stretched-link">
-                    <h3>AI Services</h3>
+                  <Link href="/service-details/talent_acquisition_excellence" className="stretched-link">
+                    <h3>Talent Acquisition Excellence</h3>
                   </Link>
-                  <p> We provide cutting-edge AI services by creating custom Large Language Models (LLMs) tailored to meet unique requirements.</p>
+                  <p>At GKelite-Info Service, we are dedicated to securing top-tier talent that fuels innovation and business growth and ensuring the best fit.</p>
                 </div>
               </div>
+
             </div>
            
           </div>
