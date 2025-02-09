@@ -116,6 +116,21 @@ const About = () => {
                         <p>Experienced Professionals Dedicated To Innovation</p>
                     </div>
 
+{/* Team Member 2 */}
+                            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                                <div className="team-member">
+                                    <div className="member-img">
+                                        <img src="/assets/img/team/team-2.png" className="img-fluid" alt="Narra Shiva Prasad" />
+                                        <div className="social">
+                                            <Link href="#"><i className="bi bi-linkedin"></i></Link>
+                                        </div>
+                                    </div>
+                                    <div className="member-info">
+                                        <h4>Narra Shiva Prasad</h4>
+                                        <span>CEO (Founder)</span>
+                                    </div>
+                                </div>
+                            </div>
                     {/* Aligning team members towards the right */}
                     <div className="container">
                         <div className="row gy-4">
@@ -135,21 +150,7 @@ const About = () => {
                                 </div>
                             </div>
 
-                            {/* Team Member 2 */}
-                            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                                <div className="team-member">
-                                    <div className="member-img">
-                                        <img src="/assets/img/team/team-2.png" className="img-fluid" alt="Narra Shiva Prasad" />
-                                        <div className="social">
-                                            <Link href="#"><i className="bi bi-linkedin"></i></Link>
-                                        </div>
-                                    </div>
-                                    <div className="member-info">
-                                        <h4>Narra Shiva Prasad</h4>
-                                        <span>CEO (Founder)</span>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             {/* Team Member 3 */}
                             <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
