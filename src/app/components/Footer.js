@@ -42,11 +42,11 @@ const Footer = () => {
                         <div className="col-lg-2 col-md-3 footer-links">
                             <h4>Our Services</h4>
                             <ul>
-                                <li><Link href="/service-details/ai_services">IT Development</Link></li>
-                                <li><Link href="/service-details/talent_acquisition_excellence">Talent Acquisition</Link></li>
+                                <li><Link href="/service-details/ai_services">AI Services</Link></li>
+                                <li><Link href="/service-details/dynamic_Digital_marketing_solutions"> Digital Marketing</Link></li>
                                 <li><Link href="/service-details/b2b_b2c_sales_mastery">B2B & B2C Sales</Link></li>
-                                <li><Link href="/service-details/dynamic_Digital_marketing_solutions">Marketing</Link></li>
                                 <li><Link href="/service-details/bpo_services">BPO Service</Link></li>
+                                <li><Link href="/service-details/talent_acquisition_excellence">Talent Acquisition</Link></li>
                             </ul>
                         </div>
 
